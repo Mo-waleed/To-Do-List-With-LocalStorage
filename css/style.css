@@ -15,6 +15,11 @@
   border-radius: 5px;
   outline: none;
 }
+@media (max-width: 767px) {
+  .form .input {
+    width: fit-content;
+  }
+}
 /* .form .input:focus {
   outline: none;
 } */
