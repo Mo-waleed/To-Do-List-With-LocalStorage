@@ -3,7 +3,7 @@
 let input = document.querySelector(".input");
 let submit = document.querySelector(".add");
 let taskDiv = document.querySelector(".tasks");
-const dragArea = document.querySelector(".delete")
+const dragArea = document.querySelector(".del")
 //empty array to store the tasks
 let arrayOfTasks = [];
 
