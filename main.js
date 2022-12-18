@@ -1,11 +1,9 @@
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-////////////////////////////////////////////
-////////////////////////////////////////////
 let input = document.querySelector(".input");
 let submit = document.querySelector(".add");
 let taskDiv = document.querySelector(".tasks");
-
+const dragArea = document.querySelector(".tasks")
 //empty array to store the tasks
 let arrayOfTasks = [];
 
@@ -111,3 +109,6 @@ function toggleStatusTaskWith(taskId) {
   }
   addDataToLocalStorgeFrom(arrayOfTasks);
 }
+new Sortable(dragArea, {
+  animation:350
+});
